@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TwoController">
+            <connections>
+                <outlet property="bgImageView" destination="vv8-Su-N7D" id="TyE-tC-wkB"/>
+                <outlet property="bgview" destination="J4p-iJ-Cke" id="IMy-Z5-vqD"/>
+                <outlet property="curView" destination="se5-gp-TjO" id="Rmj-2D-2MP"/>
+                <outlet property="screenPic" destination="KBJ-0T-LJw" id="Lut-Ff-8BI"/>
+                <outlet property="subLabel" destination="i05-yq-u87" id="piZ-b4-aIS"/>
+                <outlet property="titileLabel" destination="336-R6-Tkh" id="1oA-Cb-dNr"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1792" height="1097"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vv8-Su-N7D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="414" id="8pI-yk-NQD"/>
+                            <constraint firstAttribute="height" constant="736" id="fg1-ug-xbG"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Wpf-Jj-poE"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="336-R6-Tkh">
+                        <rect key="frame" x="8" y="646" width="398" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="wJ5-eG-Ykq"/>
+                        </constraints>
+                        <textFieldCell key="cell" alignment="center" title="这个是标题" id="mtD-dw-CjJ">
+                            <font key="font" metaFont="systemHeavy" size="35"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i05-yq-u87">
+                        <rect key="frame" x="8" y="586" width="398" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="7en-Dg-jl1"/>
+                        </constraints>
+                        <textFieldCell key="cell" alignment="center" title="这个是副标题" id="JwW-61-va0">
+                            <font key="font" metaFont="system" size="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBJ-0T-LJw">
+                        <rect key="frame" x="94" y="72" width="226" height="404"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KBJ-0T-LJw" secondAttribute="height" multiplier="375:667" id="fVm-uq-fwq"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="7ow-ZX-q4W"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-iJ-Cke">
+                        <rect key="frame" x="79" y="10" width="256" height="531"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="J4p-iJ-Cke" secondAttribute="height" multiplier="871:1800" id="ZAb-gm-NTk"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="iphone6" id="4RP-WH-MQg"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vv8-Su-N7D" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="8Mz-yI-nRT"/>
+                    <constraint firstItem="KBJ-0T-LJw" firstAttribute="centerX" secondItem="J4p-iJ-Cke" secondAttribute="centerX" id="9Bx-K8-u0O"/>
+                    <constraint firstItem="J4p-iJ-Cke" firstAttribute="centerX" secondItem="vv8-Su-N7D" secondAttribute="centerX" id="BkR-Is-swE"/>
+                    <constraint firstAttribute="bottom" secondItem="J4p-iJ-Cke" secondAttribute="bottom" constant="10" id="DLK-HH-Odc"/>
+                    <constraint firstItem="i05-yq-u87" firstAttribute="top" secondItem="336-R6-Tkh" secondAttribute="bottom" constant="25" id="GZg-cy-TQc"/>
+                    <constraint firstItem="i05-yq-u87" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="10" id="JiY-lO-GaM"/>
+                    <constraint firstItem="KBJ-0T-LJw" firstAttribute="leading" secondItem="J4p-iJ-Cke" secondAttribute="leading" constant="15" id="RDs-t1-wlG"/>
+                    <constraint firstAttribute="trailing" secondItem="vv8-Su-N7D" secondAttribute="trailing" id="RMf-MS-2YF"/>
+                    <constraint firstAttribute="bottom" secondItem="vv8-Su-N7D" secondAttribute="bottom" id="UHg-fs-3ik"/>
+                    <constraint firstItem="336-R6-Tkh" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="10" id="Yzx-ZA-BOf"/>
+                    <constraint firstItem="J4p-iJ-Cke" firstAttribute="top" secondItem="i05-yq-u87" secondAttribute="bottom" constant="45" id="Zd2-dy-Lfv"/>
+                    <constraint firstAttribute="trailing" secondItem="i05-yq-u87" secondAttribute="trailing" constant="10" id="chp-k9-VG0"/>
+                    <constraint firstItem="336-R6-Tkh" firstAttribute="centerX" secondItem="vv8-Su-N7D" secondAttribute="centerX" id="dM4-vE-yWO"/>
+                    <constraint firstAttribute="trailing" secondItem="336-R6-Tkh" secondAttribute="trailing" constant="10" id="k3i-ih-kR2"/>
+                    <constraint firstItem="KBJ-0T-LJw" firstAttribute="top" secondItem="J4p-iJ-Cke" secondAttribute="top" constant="65" id="kUV-en-BiP"/>
+                    <constraint firstItem="336-R6-Tkh" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="50" id="wGB-IW-kPg"/>
+                    <constraint firstItem="vv8-Su-N7D" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="zCd-Ku-Rgw"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="147"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="iphone6" width="871" height="1800"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="iPhoneXController">
+            <connections>
+                <outlet property="bgview" destination="Cie-RU-g2o" id="pom-dF-Miu"/>
+                <outlet property="imageview" destination="ae4-NG-38Y" id="MbW-fw-5Dx"/>
+                <outlet property="subTitleLabel" destination="i3S-EI-O5d" id="Kwy-ul-25a"/>
+                <outlet property="titleLabel" destination="68x-X2-U6Z" id="wie-DD-T7v"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Cie-RU-g2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="68x-X2-U6Z">
+                                <rect key="frame" x="8" y="805" width="398" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="UFO-Oq-j1u"/>
+                                </constraints>
+                                <textFieldCell key="cell" alignment="center" title="这是标题" id="7zI-Ws-EkT">
+                                    <font key="font" metaFont="systemHeavy" size="35"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-NG-38Y">
+                                <rect key="frame" x="61" y="33" width="292" height="632"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ae4-NG-38Y" secondAttribute="height" multiplier="9:19.5" id="KKZ-V8-Bcj"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="1wp-Ye-Sl8"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i3S-EI-O5d">
+                                <rect key="frame" x="8" y="740" width="398" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Mcu-0E-Qcx"/>
+                                </constraints>
+                                <textFieldCell key="cell" alignment="center" title="这是副标题" id="RAv-VB-TMR">
+                                    <font key="font" metaFont="systemMedium" size="30"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z0u-wW-zMu">
+                                <rect key="frame" x="41" y="20" width="332" height="665"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z0u-wW-zMu" secondAttribute="height" multiplier="36:72.2" id="39m-n6-y2x"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="iphonex" id="UA5-6v-lca"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ae4-NG-38Y" firstAttribute="leading" secondItem="z0u-wW-zMu" secondAttribute="leading" constant="20" id="1xb-aw-KO4"/>
+                            <constraint firstItem="z0u-wW-zMu" firstAttribute="top" secondItem="i3S-EI-O5d" secondAttribute="bottom" constant="55" id="5iJ-oL-QJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="i3S-EI-O5d" secondAttribute="trailing" constant="10" id="APU-2d-t3K"/>
+                            <constraint firstItem="68x-X2-U6Z" firstAttribute="leading" secondItem="Cie-RU-g2o" secondAttribute="leading" constant="10" id="AhA-F8-HAE"/>
+                            <constraint firstItem="ae4-NG-38Y" firstAttribute="top" secondItem="z0u-wW-zMu" secondAttribute="top" constant="20" id="CJY-ES-AcR"/>
+                            <constraint firstItem="ae4-NG-38Y" firstAttribute="trailing" secondItem="z0u-wW-zMu" secondAttribute="trailing" constant="-20" id="DGW-eW-VQM"/>
+                            <constraint firstAttribute="trailing" secondItem="68x-X2-U6Z" secondAttribute="trailing" constant="10" id="O2g-qM-iYm"/>
+                            <constraint firstItem="i3S-EI-O5d" firstAttribute="leading" secondItem="Cie-RU-g2o" secondAttribute="leading" constant="10" id="Vuv-27-6Y2"/>
+                            <constraint firstAttribute="width" constant="414" id="Whh-Oc-Qax"/>
+                            <constraint firstAttribute="bottom" secondItem="z0u-wW-zMu" secondAttribute="bottom" constant="20" id="ZZ6-RY-2z1"/>
+                            <constraint firstItem="i3S-EI-O5d" firstAttribute="top" secondItem="68x-X2-U6Z" secondAttribute="bottom" constant="30" id="jW4-sN-VEF"/>
+                            <constraint firstAttribute="height" constant="896" id="jjG-ma-f9R"/>
+                            <constraint firstItem="z0u-wW-zMu" firstAttribute="centerX" secondItem="Cie-RU-g2o" secondAttribute="centerX" id="lde-SP-fnc"/>
+                            <constraint firstItem="68x-X2-U6Z" firstAttribute="top" secondItem="Cie-RU-g2o" secondAttribute="top" constant="50" id="tZw-zF-8cp"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Cie-RU-g2o" secondAttribute="bottom" id="GOn-hP-Adu"/>
+                    <constraint firstAttribute="trailing" secondItem="Cie-RU-g2o" secondAttribute="trailing" id="Giu-qq-CfE"/>
+                    <constraint firstItem="Cie-RU-g2o" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="Z9l-nW-Bni"/>
+                    <constraint firstItem="Cie-RU-g2o" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="lMh-G0-uz0"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="113"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="iphonex" width="360" height="722"/>
+    </resources>
+</document>

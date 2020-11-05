@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlusHController">
+            <connections>
+                <outlet property="bgview" destination="sf0-uc-z5j" id="wbj-ix-YiI"/>
+                <outlet property="imageview" destination="bvJ-rN-Hua" id="Nua-N3-5hS"/>
+                <outlet property="subTitleLabel" destination="efA-pp-T2q" id="z4w-fX-QgA"/>
+                <outlet property="titleLabel" destination="BDA-oW-Adv" id="zqF-eO-e8Z"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="sf0-uc-z5j">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvJ-rN-Hua">
+                                <rect key="frame" x="515" y="65" width="161" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bvJ-rN-Hua" secondAttribute="height" multiplier="375:667" id="YP1-8V-8Ny"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="IdO-cA-uZy"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6dc-IA-2Vg">
+                                <rect key="frame" x="505" y="20" width="181" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6dc-IA-2Vg" secondAttribute="height" multiplier="871:1800" id="4qA-Bm-fmG"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="iphone6" id="wXq-ty-B8J"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BDA-oW-Adv">
+                                <rect key="frame" x="48" y="242" width="409" height="82"/>
+                                <textFieldCell key="cell" alignment="left" title="这是副标题这是副标题这是副标题这是副标题" id="i24-Jb-Oi3">
+                                    <font key="font" metaFont="systemHeavy" size="35"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="efA-pp-T2q">
+                                <rect key="frame" x="48" y="122" width="399" height="70"/>
+                                <textFieldCell key="cell" alignment="left" title="这是副标题这是副标题这是副标题这是副标题这是副标题" id="Mo1-RW-uCL">
+                                    <font key="font" metaFont="systemMedium" size="30"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="efA-pp-T2q" firstAttribute="leading" secondItem="sf0-uc-z5j" secondAttribute="leading" constant="50" id="0KE-Je-VfP"/>
+                            <constraint firstAttribute="bottom" secondItem="6dc-IA-2Vg" secondAttribute="bottom" constant="20" id="2Cq-vL-wI3"/>
+                            <constraint firstItem="BDA-oW-Adv" firstAttribute="leading" secondItem="sf0-uc-z5j" secondAttribute="leading" constant="50" id="5uZ-wj-Cmc"/>
+                            <constraint firstItem="efA-pp-T2q" firstAttribute="top" secondItem="BDA-oW-Adv" secondAttribute="bottom" constant="50" id="8jq-29-79C"/>
+                            <constraint firstItem="BDA-oW-Adv" firstAttribute="top" secondItem="sf0-uc-z5j" secondAttribute="top" constant="90" id="AUw-E5-NiJ"/>
+                            <constraint firstItem="6dc-IA-2Vg" firstAttribute="leading" secondItem="efA-pp-T2q" secondAttribute="trailing" constant="60" id="LuQ-L8-7Ev"/>
+                            <constraint firstAttribute="trailing" secondItem="6dc-IA-2Vg" secondAttribute="trailing" constant="50" id="Pxu-eo-SXp"/>
+                            <constraint firstAttribute="height" constant="414" id="Qkq-Og-MKO"/>
+                            <constraint firstItem="6dc-IA-2Vg" firstAttribute="top" secondItem="sf0-uc-z5j" secondAttribute="top" constant="20" id="Tyy-wY-YCW"/>
+                            <constraint firstItem="bvJ-rN-Hua" firstAttribute="top" secondItem="6dc-IA-2Vg" secondAttribute="top" constant="43" id="UhO-UM-snM"/>
+                            <constraint firstItem="bvJ-rN-Hua" firstAttribute="trailing" secondItem="6dc-IA-2Vg" secondAttribute="trailing" constant="-10" id="jE9-hH-r29"/>
+                            <constraint firstItem="bvJ-rN-Hua" firstAttribute="leading" secondItem="6dc-IA-2Vg" secondAttribute="leading" constant="10" id="m1u-tc-g0a"/>
+                            <constraint firstItem="6dc-IA-2Vg" firstAttribute="centerY" secondItem="sf0-uc-z5j" secondAttribute="centerY" id="mHD-7b-Hhk"/>
+                            <constraint firstAttribute="width" constant="736" id="ooV-bQ-Lva"/>
+                            <constraint firstItem="6dc-IA-2Vg" firstAttribute="leading" secondItem="BDA-oW-Adv" secondAttribute="trailing" constant="50" id="w2X-Xq-tLa"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sf0-uc-z5j" secondAttribute="bottom" id="Lat-WC-glo"/>
+                    <constraint firstAttribute="trailing" secondItem="sf0-uc-z5j" secondAttribute="trailing" id="Rcd-RX-nNE"/>
+                    <constraint firstItem="sf0-uc-z5j" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="hZ5-P0-e6z"/>
+                    <constraint firstItem="sf0-uc-z5j" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="q75-xO-wCU"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="113"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="iphone6" width="871" height="1800"/>
+    </resources>
+</document>
