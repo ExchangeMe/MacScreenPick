@@ -71,7 +71,7 @@
             //                  保存图片
             NSImage *image = [[NSImage alloc] initWithSize:self.curView.frame.size];
             [image addRepresentation:rep];
-            NSData * data = [ZLImage compressedImageDataWithImg:[ZLImage resizeImage2:image forSize:CGSizeMake(621, 1104)] rate:0.4];
+            NSData * data = [ZLImage compressedImageDataWithImg:[ZLImage resizeImage2:image forSize:CGSizeMake(1242, 2208)] rate:0.4];
             
             if ([data writeToFile:path atomically:YES]) {
                 [self.window close];
